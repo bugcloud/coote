@@ -1,0 +1,4 @@
+if [[ -s "coote.gems" ]] ; then
+  rvm gemset import coote.gems | grep -v already | grep -v listed | grep -v complete | sed '/^$/d'
+fi
+rvm  1.9.2@coote
