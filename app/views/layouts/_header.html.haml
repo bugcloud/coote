@@ -4,6 +4,6 @@
   %nav
     %ul
       %li{:class => (request.path_info == root_path)? 'active' : ''}
-        = link_to "home", root_path
-      %li
-        = link_to "home2", root_path
+        = link_to "Home", root_path
+      %li{:class => (request.path_info == new_mono_path)? 'active' : ''}
+        = link_to "New coote", new_mono_path
