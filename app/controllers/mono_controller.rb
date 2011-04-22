@@ -4,7 +4,13 @@ class MonoController < ApplicationController
   end
 
   def create
-    redirect_to root_path
+    @mono = Mono.new(params[:mono])
+    @mono.status = 0
+    if @mono.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def destroy

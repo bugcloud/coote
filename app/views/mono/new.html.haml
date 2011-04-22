@@ -1,3 +1,8 @@
+- if @mono.errors.any?
+  #error_explanation
+    %ul
+      - @mono.errors.full_messages.each do |msg|
+        %li= msg
 = form_for @mono, :url => '/mono/create' do |f|
   =f.text_field :from, :placeholder => '私は'
   %span は
