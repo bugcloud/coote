@@ -1,6 +1,9 @@
 Coote::Application.routes.draw do
 
   get "top/index"
+  match '/mono/new' => 'mono#new', :as => :new_mono
+  match '/mono/create' => 'mono#create', :as => :create_mono
+  match '/mono/delete' => 'mono#destroy', :as => :delete_mono
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
