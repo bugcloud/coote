@@ -1,4 +1,5 @@
 = form_for @mono, :url => '/mono/create' do |f|
   =f.text_field :from
   =f.text_field :to
-  =f.text_field :body
+  =f.text_area :body, :size => '50x4'
+  =f.submit

@@ -9,3 +9,8 @@ Feature: user access to coote
     When I go to the homepage
     Then I should see "coote"
     And I should see 3 requests
+
+  Scenario: show new mono request form
+    Given I am on the homepage
+    When I go to the new mono page
+    Then I should see new mono form
