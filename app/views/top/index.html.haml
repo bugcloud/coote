@@ -1,3 +1,8 @@
 - @monos.each do |m|
   .coote_request
-    %p=m.body
+    %p
+      %strong=m.from
+      &nbsp;says to&nbsp;
+      %strong=m.to
+      .triangle-border.top
+        #{m.body}こーてきて！
