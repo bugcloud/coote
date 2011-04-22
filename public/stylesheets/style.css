@@ -1,0 +1,104 @@
+/*
+Syntax error: Undefined mixin 'border-radius'.
+        on line 114 of /home/nagino/Sites/coote/public/stylesheets/sass/style.sass, in `border-radius'
+        from line 114 of /home/nagino/Sites/coote/public/stylesheets/sass/style.sass
+
+109:     :line-height 30px
+110:     :margin 0 auto 2em auto
+111:     :padding 0
+112:     :text-align center
+113:     :width 800px
+114:     @include border-radius(5px)
+115: 
+116:     ul
+117:       :list-style none
+118:       :margin 0 auto
+119:       :width 800px
+
+Backtrace:
+/home/nagino/Sites/coote/public/stylesheets/sass/style.sass:114:in `border-radius'
+/home/nagino/Sites/coote/public/stylesheets/sass/style.sass:114
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `block in perform_children'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `block in perform_children'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `block in perform_children'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/root_node.rb:59:in `perform!'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/tree/root_node.rb:29:in `render'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin.rb:223:in `update_stylesheet'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin.rb:88:in `block (2 levels) in update_stylesheets'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `each'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `block in update_stylesheets'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `each'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/home/nagino/.rvm/gems/ruby-1.9.2-p0@coote/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+<internal:prelude>:10:in `synchronize'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+/home/nagino/.passenger/standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.4.5-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 114 of /home/nagino/Sites/coote/public/stylesheets/sass/style.sass, in `border-radius'\A         from line 114 of /home/nagino/Sites/coote/public/stylesheets/sass/style.sass\A \A 109:     :line-height 30px\A 110:     :margin 0 auto 2em auto\A 111:     :padding 0\A 112:     :text-align center\A 113:     :width 800px\A 114:     @include border-radius(5px)\A 115: \A 116:     ul\A 117:       :list-style none\A 118:       :margin 0 auto\A 119:       :width 800px"; }
