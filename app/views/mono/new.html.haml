@@ -1,5 +1,11 @@
 = form_for @mono, :url => '/mono/create' do |f|
-  =f.text_field :from
-  =f.text_field :to
-  =f.text_area :body, :size => '50x4'
-  =f.submit
+  =f.text_field :from, :placeholder => '私は'
+  %span は
+  =f.text_field :to, :placeholder => '○○さん'
+  %span に
+  %div &nbsp;
+  =f.text_area :body, :size => '50x4', :placeholder => '☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻☻'
+  %br/
+  %div &nbsp;
+  %span を
+  =f.submit "こーてほしい"
