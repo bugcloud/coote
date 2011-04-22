@@ -116,6 +116,7 @@ img.left, figure.left
     ul
       :list-style none
       :margin 0 auto
+      :padding 0
       :width 800px
 
     li
@@ -137,3 +138,11 @@ img.left, figure.left
 
     li:first-child a
       @include border-radius-left(5px)
+
+#content
+  :background #fff
+  :margin-bottom 2em
+  :overflow hidden
+  :padding 20px 20px
+  :width 760px
+  @include border-radius(10px)

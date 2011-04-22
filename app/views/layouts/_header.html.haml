@@ -3,7 +3,7 @@
     = link_to "coote", root_path
   %nav
     %ul
-      %li
+      %li{:class => (request.path_info == root_path)? 'active' : ''}
         = link_to "home", root_path
       %li
         = link_to "home2", root_path
