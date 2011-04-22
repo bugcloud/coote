@@ -27,3 +27,10 @@ Factory.define :mono_error, :class => Mono do |m|
   m.body ""
   m.status nil 
 end
+
+Factory.define :mono_def, :class => Mono do |m|
+  m.from nil
+  m.to ""
+  m.body "aa"
+  m.status 0 
+end

@@ -7,10 +7,10 @@ class Mono
   field :body, :type => String
   field :status, :type => Integer
 
-  validates :from, :presence => true
-  validates :to, :presence => true
   validates :body, :presence => true
   validates :status, :presence => true
+
+  before_create :set_defaults_value
 
   STATUSES = [
     {:value => 0, :text => '買って'},
@@ -49,6 +49,16 @@ class Mono
 
   def self.status_deny_text
     Mono.status_text(3)
+  end
+
+  protected
+  def set_defaults_value
+    if self.from.nil? || self.from == ""
+      self.from = "Anonymous"
+    end
+    if self.to.nil? || self.to == ""
+      self.to = "|:3ミ"
+    end
   end
 
   private

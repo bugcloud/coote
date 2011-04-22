@@ -23,12 +23,20 @@ describe Mono do
   end
 
   context "validations" do
-    it "from, to, body, statusは必須" do
+    it "body, statusは必須" do
       error = Factory.build(:mono_error)
-      error.should have(1).errors_on(:from)
-      error.should have(1).errors_on(:to)
       error.should have(1).errors_on(:body)
       error.should have(1).errors_on(:status)
+    end
+  end
+
+  context "default value" do
+    it "body, statusは必須" do
+      mono_def = Factory.build(:mono_def)
+      mono_def.save.should == true
+      m = Mono.find(mono_def.id)
+      m.from.should == "Anonymous"
+      m.to.should == "|:3ミ"
     end
   end
 
