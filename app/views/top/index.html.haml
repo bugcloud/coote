@@ -5,11 +5,13 @@
       &nbsp;says to&nbsp;
       %strong=m.to
       .triangle-border.top
-        #{m.body}こーてきて！
+        #{hbr m.body}こーてきて！
       .clearfix
         %div.comments_area{:id => "comments_area_#{m.id}"}
           - m.comments.each do |c|
             .triangle-border.right
-              #{c.body}
+              #{hbr c.body}
+              %p.speecher
+                %strong=c.name
       %p.clearfix
         = link_to "reply", "#", :id => "reply_to_#{m.id}", :class => "reply_link", "data-mono-id" => m.id
