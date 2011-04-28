@@ -12,8 +12,9 @@ Given /^there is no data$/ do
   Mono.delete_all
 end
 
-Given /^there are (\d+) comments to first request data$/ do |count|
-  pending "Factory.build(:comment).save"
+Given /^there are 3 comments to first request data$/ do
+  @mono001.comments << [Factory.build(:comment001), Factory.build(:comment002), Factory.build(:comment003)]
+  @mono001.save!
 end
 
 Given /^I am seeing the new comment form$/ do

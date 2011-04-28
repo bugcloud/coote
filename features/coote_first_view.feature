@@ -6,10 +6,11 @@ Feature: user access to coote
 
   Scenario: access to top page at first time
     Given there are 3 request data
-    And there are 2 comments to first request data
+    And there are 3 comments to first request data
     When I go to the homepage
     Then I should see "coote"
     And I should see 3 requests
+    And I should see 3 comments
 
   Scenario: show new mono request form
     Given I am on the homepage
