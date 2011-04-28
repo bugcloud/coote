@@ -37,7 +37,11 @@ a {
 a:link, a:visited {
   color: #c74350;
   padding: 0 1px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 a:hover, a:active {
   background-color: #c74350;
@@ -140,7 +144,11 @@ img.left, figure.left {
     #banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited {
       background: #c74451;
       color: white;
-      text-shadow: none !important; }
+      text-shadow: none !important;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
     #banner nav li:first-child a {
       border-top-left-radius: 5px;
       -moz-border-radius-topleft: 5px;

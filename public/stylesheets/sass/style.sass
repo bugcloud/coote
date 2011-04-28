@@ -35,6 +35,7 @@ a:link, a:visited
   :color #c74350
   :padding 0 1px
   :text-decoration underline
+  @include transition()
 a:hover, a:active
   :background-color #c74350
   :color #fff
@@ -135,6 +136,7 @@ img.left, figure.left
       :background #C74451
       :color #fff
       :text-shadow none !important
+      @include transition()
 
     li:first-child a
       @include border-radius-left(5px)

@@ -22,3 +22,8 @@
   :-webkit-transform rotate($degree)
   :rotation $degree
 
+@mixin transition($property: all, $speed: 0.5s, $easing: ease)
+  :-webkit-transition $property $speed $easing
+  :-moz-transition $property $speed $easing
+  :-o-transition $property $speed $easing
+  :transition $property $speed $easing
