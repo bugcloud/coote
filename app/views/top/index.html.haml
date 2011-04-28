@@ -15,3 +15,5 @@
                 %strong=c.name
       %p.clearfix
         = link_to "reply", "#", :id => "reply_to_#{m.id}", :class => "reply_link", "data-mono-id" => m.id
+.clearfix
+  = will_paginate @monos
