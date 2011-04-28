@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'wirble'
 gem 'nokogiri'
+gem 'will_paginate', ">= 3.0.pre2"
 
 #gems for Mongoid
 gem "mongoid", ">= 2.0.0.beta.19", :git => "https://github.com/mongoid/mongoid.git"
