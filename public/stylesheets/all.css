@@ -253,7 +253,10 @@ img.left, figure.left {
     width: 800px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 5px 0px #999999;
+    -moz-box-shadow: 3px 3px 5px 0px #999999;
+    box-shadow: 3px 3px 5px 0px #999999; }
     #banner nav ul {
       list-style: none;
       margin: 0 auto;
@@ -293,7 +296,10 @@ img.left, figure.left {
   width: 760px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 5px 0px #777777;
+  -moz-box-shadow: 3px 3px 5px 0px #777777;
+  box-shadow: 3px 3px 5px 0px #777777; }
 
 .coote_request {
   margin: 25px 0; }
