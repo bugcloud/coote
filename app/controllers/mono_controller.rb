@@ -18,10 +18,14 @@ class MonoController < ApplicationController
   end
 
   def new_comment
-    render :text => "pending"
+    @comment = Comment.new
+    render :layout => false
   end
 
   def create_comment
-    render :text => "pending"
+    @mono = Mono.find(params[:id])
+    comment = Comment.new(params[:comment])
+    @mono.comments << comment
+    @mono.save
   end
 end

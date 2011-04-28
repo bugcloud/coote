@@ -1,0 +1,7 @@
+.triangle-border.right
+  = form_for @comment, :url => create_comment_path(@coote_id), :remote => true do |f|
+    = f.text_field :name, :placeholder => "Who are you?"
+    %br/
+    = f.text_area :body, :placeholder => "Comment here..", :size => "50x5"
+    %br/
+    = f.submit "comment"

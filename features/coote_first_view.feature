@@ -26,12 +26,21 @@ Feature: user access to coote
     Then I should be on the homepage
     And I should see 1 requests
 
+  @javascript
   Scenario: show new comment form
-    Given I am on the homepage
-    And there are 3 request data
+    Given there are 3 request data
+    And I am on the homepage
     When I click "reply" of first request
     Then I should see new comment form
 
+  @javascript
   Scenario: make new comment for request
-    Given I am seeing the new comment form
+    Given there are 3 request data
+    And I am on the homepage
+    And I am seeing the new comment form
+    When I fill in "comment_name" with "watashi"
+    And I fill in "comment_body" with "OK"
+    And I press "comment_submit"
     Then I should be on the homepage
+    And I should see 3 requests
+    And I should see 1 comment
