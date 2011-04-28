@@ -6,6 +6,7 @@ class Mono
   field :to, :type => String
   field :body, :type => String
   field :status, :type => Integer
+  embeds_many :comments
 
   validates :body, :presence => true
   validates :status, :presence => true

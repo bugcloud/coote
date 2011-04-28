@@ -13,6 +13,8 @@ describe Mono do
     @mono_pine.save!
     @mono_juice = Factory.build(:mono003)
     @mono_juice.save!
+    @mono_with_comment = Factory.build(:mono_with_comment)
+    @mono_with_comment.save!
   end
 
   after(:each) do
@@ -20,6 +22,7 @@ describe Mono do
     @mono_carrot = nil
     @mono_pine = nil
     @mono_juice = nil
+    @mono_with_comment = nil
   end
 
   context "validations" do
@@ -71,6 +74,18 @@ describe Mono do
 
     it "Mono.status_deny_text は'ダメ'" do
       Mono.status_deny_text.should == 'ダメ' 
+    end
+  end
+
+  context "embeds_many comments" do
+    it "should embeds_many comments(Comment class)" do
+      @mono_with_comment.comments.size.should == 3
+      @mono_with_comment.comments[0].name.should == "usa"
+      @mono_with_comment.comments[0].body.should == "no"
+      @mono_with_comment.comments[1].name.should == "inu"
+      @mono_with_comment.comments[1].body.should == "yes"
+      @mono_with_comment.comments[2].name.should == "tiger"
+      @mono_with_comment.comments[2].body.should == "aho"
     end
   end
 end
