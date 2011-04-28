@@ -6,6 +6,7 @@ Feature: user access to coote
 
   Scenario: access to top page at first time
     Given there are 3 request data
+    And there are 2 comments to first request data
     When I go to the homepage
     Then I should see "coote"
     And I should see 3 requests
@@ -24,3 +25,13 @@ Feature: user access to coote
     And I press "mono_submit"
     Then I should be on the homepage
     And I should see 1 requests
+
+  Scenario: show new comment form
+    Given I am on the homepage
+    And there are 3 request data
+    When I click "reply" of first request
+    Then I should see new comment form
+
+  Scenario: make new comment for request
+    Given I am seeing the new comment form
+    Then I should be on the homepage
