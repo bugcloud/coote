@@ -4,6 +4,8 @@ Coote::Application.routes.draw do
   match '/mono/new' => 'mono#new', :as => :new_mono
   match '/mono/create' => 'mono#create', :as => :create_mono
   match '/mono/delete' => 'mono#destroy', :as => :delete_mono
+  match '/mono/:id/comment/new' => 'mono#new_comment', :as => :new_comment
+  match '/mono/:id/comment/create' => 'mono#create_comment', :as => :create_comment
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

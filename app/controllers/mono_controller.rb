@@ -16,4 +16,12 @@ class MonoController < ApplicationController
   def destroy
     redirect_to root_path
   end
+
+  def new_comment
+    render :text => "pending"
+  end
+
+  def create_comment
+    render :text => "pending"
+  end
 end
