@@ -234,11 +234,17 @@ img.left, figure.left {
       font-weight: bold;
       margin: 0 0 0.6em 0.2em;
       text-decoration: none;
-      width: 427px; }
+      width: 427px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
     #banner h1 a:hover, #banner h1 a:active {
       background: none;
       color: #c74350;
-      text-shadow: none; }
+      text-shadow: none;
+      font-size: 2.3em;
+      letter-spacing: 1em; }
     #banner h1 strong {
       font-size: 0.36em;
       font-weight: normal; }
