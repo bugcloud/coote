@@ -7,3 +7,5 @@
         = link_to "Home", root_path
       %li{:class => (request.path_info == new_mono_path)? 'active' : ''}
         = link_to "New coote", new_mono_path
+      %li#about
+        = link_to "About", "#aboutCoote"

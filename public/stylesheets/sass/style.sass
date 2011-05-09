@@ -145,14 +145,27 @@ img.left, figure.left
     li:first-child a
       @include border-radius-left(5px)
 
-#content
-  :background #fff
+#content, #contentinfo
+  :background rgba(255, 255, 255, 0.6)
   :margin-bottom 2em
   :overflow hidden
   :padding 20px 20px
   :width 760px
   @include border-radius(10px)
   @include boxshadow()
+  @include transition(all, 0.8s, ease-in-out)
+
+#contentinfo
+  :margin 0 auto 10px auto
+  :text-align center
+  :position fixed
+  :top 480px
+  :width 100%
+  :height 100%
+  @include transition(all, 1.5s, ease-in-out)
+
+  .primary, .bio
+    :color rgba(30, 30, 30, 1.0)
 
 .coote_request
   :margin 25px 0
@@ -168,3 +181,16 @@ p.speecher
   :top 0
   :left 653px
   :width 100%
+
+.transform_content_before
+  @include scale(0.001)
+
+.transform_content
+  @include scale_translate(1, 0px, -300px)
+
+.rotate_content
+  @include rotate(290deg)
+  @include transition(all, 0.3s, ease-in-out)
+
+.drop_content
+  @include translate(0px, 1000px)

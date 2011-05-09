@@ -12,4 +12,16 @@ $(function() {
             });
         });
     });
+    $("#about").bind('click', function() {
+      $(".active").removeClass('active');
+      $(this).addClass('active');
+      $("#content").addClass('rotate_content');
+      setTimeout(function(){
+        $("#content").addClass('drop_content');
+        setTimeout(function(){
+          $("#contentinfo").addClass('transform_content');
+          $("#content").hide()
+        }, 800);
+      },700);
+    });
 });
