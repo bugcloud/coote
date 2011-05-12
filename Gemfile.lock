@@ -160,6 +160,7 @@ GEM
       railties (~> 3.0)
       rspec (= 2.6.0.rc2)
     rubyzip (0.9.4)
+    sass (3.1.1)
     selenium-webdriver (0.1.4)
       childprocess (>= 0.1.7)
       ffi (>= 1.0.7)
@@ -199,6 +200,7 @@ DEPENDENCIES
   rails3-generators
   rspec-integration (>= 2.0.0.beta.13)
   rspec-rails (>= 2.0.0.beta.13)
+  sass
   spork
   will_paginate (>= 3.0.pre2)
   wirble
