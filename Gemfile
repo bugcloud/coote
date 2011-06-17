@@ -22,7 +22,7 @@ group :development, :test do
   gem "rspec-integration", ">= 2.0.0.beta.13"
   gem "factory_girl", :git => 'https://github.com/thoughtbot/factory_girl.git'
   gem "factory_girl_rails", :git => 'https://github.com/thoughtbot/factory_girl_rails.git'
-  gem "cucumber", :git => 'https://github.com/aslakhellesoy/cucumber.git'
+  gem "cucumber", :git => 'https://github.com/cucumber/cucumber.git'
   gem "cucumber-rails"
   gem "capybara"
   gem "database_cleaner"
