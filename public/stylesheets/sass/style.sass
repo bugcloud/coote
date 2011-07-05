@@ -1,3 +1,13 @@
+@mixin scale_translate($scale: 1.5, $x: 0px, $y: 100px)
+  :-moz-transform scale($scale) translate($x, $y)
+  :-webkit-transform scale($scale) translate($x, $y)
+  :transform scale($scale) translate($x, $y)
+
+@mixin rotate_translate($degree: 180deg, $x: 0px, $y: 100px)
+  :-moz-transform rotate($degree) translate($x, $y)
+  :-webkit-transform rotate($degree) translate($x, $y)
+  :transform rotate($degree) translate($x, $y)
+
 body
   :background #fff url('/images/bg.png')
   :color #000305

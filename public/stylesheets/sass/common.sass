@@ -11,7 +11,6 @@
   :-moz-border-radius-bottomleft $radius
   :-webkit-border-bottom-left-radius $radius
 
-
 @mixin linear-gradient($from:rgba(255,255,255,1.0), $to:rgba(0,0,0,1.0))
   :background -moz-linear-gradient(top,$from,$to)
   :background -webkit-gradient(linear,left top, left bottom, from($from), to($to))
@@ -27,20 +26,10 @@
   :-webkit-transform scale($scale)
   :transform scale($scale)
 
-@mixin scale_translate($scale: 1.5, $x: 0px, $y: 100px)
-  :-moz-transform scale($scale) translate($x, $y)
-  :-webkit-transform scale($scale) translate($x, $y)
-  :transform scale($scale) translate($x, $y)
-
 @mixin rotate($degree: 0deg)
   :-moz-transform rotate($degree)
   :-webkit-transform rotate($degree)
   :transform rotate($degree)
-
-@mixin rotate_translate($degree: 180deg, $x: 0px, $y: 100px)
-  :-moz-transform rotate($degree) translate($x, $y)
-  :-webkit-transform rotate($degree) translate($x, $y)
-  :transform rotate($degree) translate($x, $y)
 
 @mixin transition($property: all, $speed: 0.5s, $easing: ease)
   :-webkit-transition $property $speed $easing
